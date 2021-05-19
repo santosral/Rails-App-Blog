@@ -1,0 +1,30 @@
+<div class='table'>
+<%= form_with scope: :article, url: article_update_path, method: :put do |f| %>
+    <div>
+        <% if @article.errors.any? %>
+            <ul>
+                <% @article.errors.full_messages.each do |message| %>
+                    <li>
+                        <%= message %>
+                    </li>
+                <% end %>
+            </ul>
+        <% end %>
+    </div>
+
+    <div>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </div>
+
+    <div>
+        <%= f.label :body %>
+        <%= f.text_field :body %>
+    </div>
+
+    <div>
+        <%= f.submit "Save" %>  
+        <button><%= link_to 'Back', articles_path %></button>
+    </div>
+<% end %>
+</div>

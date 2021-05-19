@@ -8,9 +8,23 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'style.css' %>
+    <title>blOg</title>
   </head>
 
   <body>
-    <%= yield %>
+  <%# Navbar %>
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <h1>blOg</h1>
+        
+          <ul class="nav__list">
+            <li class="nav__item">
+              <%= link_to 'New Article', articles_new_path %>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <%= yield %>
   </body>
 </html>

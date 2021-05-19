@@ -1,0 +1,161 @@
+/* Lora & Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap');
+
+:root {
+
+    /* Font Styles */
+    --title-font: 'Lora', serif;
+    --body-font: 'Lato', sans-serif;
+
+    --header-height: 3rem;
+  
+    /* Colors */
+
+    --button-color: #b3b1b1;
+    --first-color: #67ff20;
+    --first-color-alt: #00ff4c;
+    --nav-color: #ffffff;
+    --title-color: #707070;
+    --subtitle-color: #ffffff;
+    --text-color: #1b1b1b;
+    --text-color-light: #a6a6a6;
+    --body-color: #fbfefd;
+    --container-color: #ffffff;
+    --navbar-bg: #47f724ab;
+  
+    /* Font */
+  
+    --body-font: 'Sora', sans-serif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  
+    /* Font Weight */
+  
+    --font-medium: 400;
+    --font-semi-bold: 700;
+  
+    /* margin */
+  
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+  
+    /* Z-Index */
+  
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  h1 {
+    font-family: var(--title-font);
+  }
+
+  h2 {
+    font-family: var(--title-font);
+    font-size: var(--h1-font-size);
+  }
+
+  body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+  .nav {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+  }
+
+.nav__item {
+  margin-bottom: var(--mb-2);
+}
+
+.nav__link,
+.nav__logo,
+.nav__toggle {
+  color: var(--nav-color);
+}
+
+.nav__logo {
+  font-weight: var(--font-semi-bold);
+}
+
+.nav__logo:hover {
+  color: var(--first-color-alt);
+}
+
+.nav__link {
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: #eeff00;
+}
+
+.nav__toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.table {
+  margin: var(--header-height) 0 0 0;
+  margin-left:auto; 
+  margin-right:auto;
+  text-align: center;
+  padding: 0 10rem;
+}
+
+.showcase {
+  margin: var(--header-height) 0 0 0;
+  margin: auto;
+  text-align: center;
+}
+
+.body-font {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.article-title {
+  padding-bottom: 2rem;
+}
+
+.button {
+  padding: 2rem 0;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  border: none;
+  background: var(--button-color);
+  box-shadow: 2px 3px #808080;
+}
